@@ -10,7 +10,8 @@ public class TimeDecorator extends MessageDecorator{
     @Override
     public String send() {
 
-        return super.send() + " sended at: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
+        return super.send() + " sended at: "
+                + LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
     }
 
 }
