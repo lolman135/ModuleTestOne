@@ -7,7 +7,7 @@ public class ConcreteMessage implements Message{
     }
 
     @Override
-    public void send(String text) {
-        System.out.println(text);
+    public String send() {
+        return text;
     }
 }
